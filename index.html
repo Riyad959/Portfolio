@@ -6,16 +6,25 @@
     <title>Riyadul Islam</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="./js/test.js"></script>
   </head>
   <body>
 <!--  -->
     <!-----------------------------------
      * #Scroll to top button
     ------------------------------------>
+    <div class="scrollToTop-btn flex-center">
+      <i class="fas fa-arrow-up"></i>
+    </div>
 
     <!-----------------------------------
      * #Light/Dark theme button
     ------------------------------------>
+    <div class="theme-btn flex-center">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </div>
 
     <!-----------------------------------
      * #Header
@@ -25,7 +34,8 @@
         <a href="#" class="logo">RIYAD</a>
         <div class="navigation">
           <div class="nav-items">
-            <a href="#home">Home</a>
+            <div class="nav-close-btn"></div>
+            <a class="active" href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -33,6 +43,7 @@
             <a href="#odyssey">Odyssey</a>  <!--add a another page-->
           </div>
         </div>
+        <div class="nav-menu-btn"></div>
       </div>
     </header>
 
@@ -42,17 +53,17 @@
     <section class="home flex-center" id="home">
       <div class="home-container">
         <div class="media-icons">
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-discord"></i></a>
+          <a href="mailto:riyadulislam959@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/riyadul-islam-11a18a28a"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Riyad959"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.youtube.com/@riyadsartbook"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://discord.com/users/674847774046683157"><i class="fa-brands fa-discord"></i></a>
         </div>
         <div class="info">
           <h2>Hi, I am Riyadul Islam</h2>
           <h3>Welcome to my digital abode!</h3>
           <p>I am a passionate and ambitious student pursuing Computer Science and Engineering, eager to embark on a journey of innovation. As a tech enthusiast, I constantly seek to expand my knowledge and skills in various domains of computer science, from software development to artificial intelligence. </p>
-          <a href="" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="#contact" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
         </div>
         <div class="home-img">
           <img src="./images/ME.png" alt="">
@@ -89,11 +100,11 @@
                 <span>Happy Coding</span>
               </li>
               <li class="list-item">
-                <h3>Plenty of</h3>
+                <h3>10+</h3>
                 <span>Successful<br>Projects</span>
               </li>
             </ul>
-            <a href="" class="btn">Download CV <i class="fas fa-download"></i></a>
+            <a href="#" class="btn">Download CV <i class="fas fa-download"></i></a>
           </div>
         </div>
       </div>
@@ -109,7 +120,7 @@
         <div class="content">
           <div class="skills-description">
             <h3>Education & Skills</h3>
-            <p>asuif hiuhaui fuia huag fiaghgfaui hja yuia gfia hjfag iajh gfuyag fasuif hiuhaui fuia huag fiaghgfaui hja yuia gfia hjfag iajh gfuyag fasuif hiuhaui fuia huag fiaghgfaui hja yuia gfia hjfag iajh gfuyag f</p>
+            <p>In addition to studying AI and Deep Learning for my bachelor’s degree, I’m researching lumbar spine degenerative disorders. My solid foundation in Computer Science has allowed me to develop skills in Python, Java, and C programming, as well as expertise in UI/UX design using Adobe XD and Figma. I also bring strong interpersonal and teamwork abilities, essential for effective problem-solving.</p>
           </div>
           <div class="skills-info education-all">
             <div class="education">
@@ -400,7 +411,7 @@
                     <a class="link" href="https://github.com/Riyad959/Wallpaper_Infinity">See Demo </a>
                     <!-- <i class="fas fa-arrow-right"></i></p> -->
                       &nbsp;&#8226&nbsp;
-                    <a class="link-2" href="">Watch Video</a></i>
+                    <a class="link-2" href="https://www.youtube.com/watch?v=-KLgzXwlGuI">Watch Video</a></i>
                   </p>
                 </div>
               </div>
@@ -468,7 +479,7 @@
               <h2>Next Future Plan</h2>
             </div>
             <div class="contact-btn">
-              <a href="" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+              <a href="#contact" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
             </div>
           </div>
         </div>
@@ -484,10 +495,86 @@
     <!-----------------------------------
      * #Contact section
     ------------------------------------>
+    <section class="contact section" id="contact">
+      <div class="container flex-center">
+        <h1 class="section-title-01">Contact Me</h1>
+        <h1 class="section-title-02">Contact Me</h1>
+        <div class="content">
+          <div class="contact-left">
+            <h2>Let's Discuss your plan</h2>
+            <ul class="contact-list">
+
+              <li>
+                <h3 class="item-title"><i class="fa fa-envelope"></i> Email Address</h3>
+                <span><a href="mailto:riyadulislam959@gmail.com">riyadulislam959@gmail.com</a></span>
+              </li>
+
+              <li>
+                <h3 class="item-title"><i class="fa-brands fa-discord"></i> Discord</h3>
+                <span><a href="https://discord.com/users/674847774046683157">@Riyad_959#8597</a></span>
+              </li>
+
+              <li>
+                <h3 class="item-title"><i class="fa-brands fa-linkedin"></i> Linkedin</h3>
+                <span><a href="https://www.linkedin.com/in/riyadul-islam-11a18a28a">Linkedin</a></span>
+              </li>
+
+            </ul>
+          </div>
+          <div class="contact-right">
+            <p>I’m enthusiastic about connecting with others <br>for exciting <span>projects and partnerships.</span> <br>Let’s chat if you have something in mind!</p>
+            <form action="" class="contact-form">
+              <div class="first-row">
+                <input type="text" placeholder="Name">
+              </div>
+              <div class="second-row">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+              </div>
+              <div class="third-row">
+                <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+              </div>
+              <button class="btn" type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-----------------------------------
      * #Footer
     ------------------------------------>
+    <footer>
+      <div class="footer-container">
+        <div class="about group">
+          <h2>RIYAD</h2>
+          <p>&#8226 Computer Engineer <br>&#8226 Student Researcher<br>  &#8226 DofE Award recipient</p>
+          <a href="#about">About Me</a>
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+          <h3>More</h3>
+          <ul>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#odyssey">Odyssey</a>
+          </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="follow group">
+          <h3>Also Follow Me on</h3>
+          <ul>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a> <br>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright group">
+        <p>&copy; 2024 by Riyad. All rights reserved.</p>
+      </div>
+    </footer>
 
     <!-----------------------------------
      * #External scripts
