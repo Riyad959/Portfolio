@@ -111,17 +111,6 @@ ScrollReveal({
     delay: 100
 });
 
-//Target elements, and specify options to create reveal animations
-// ScrollReveal().reveal('.home .info h2, .section-title-01', { delay: 500, origin: 'right' });
-// ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn, .section-title-02', { delay: 1000, origin: 'right' });
-// ScrollReveal().reveal('.home .info .btn', { delay: 1400, origin: 'left', interval: 100 });
-// ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 500, origin: 'left', interval: 200 });
-// ScrollReveal().reveal('.home-img, .about-img', { delay: 500, origin: 'bottom' });
-// ScrollReveal().reveal('.about .description, .copy-right', { delay: 600, origin: 'right' });
-// ScrollReveal().reveal('.about .professional-list li', { delay: 500, origin: 'right', interval:200 });
-// ScrollReveal().reveal('.skills-descriptions, .service-description, .contact-card, .client-swiper, .contact-left h2', { delay: 700, origin: 'left' });
-// ScrollReveal().reveal('.experience-card, service-card, .education, .portfolio .img-card', { delay: 800, origin: 'bottom', interval: 200 });
-// ScrollReveal().reveal('.footer .group', { delay: 800, origin: 'top', interval: 200 });
 
 ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay: 400, origin: 'right' });
 ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn', { delay: 900, origin: 'right' });
@@ -130,6 +119,6 @@ ScrollReveal().reveal('.media-icons i, .contact-left li', { delay: 400, origin: 
 ScrollReveal().reveal('.home-img, .about-img', { delay: 400, origin: 'bottom' });
 ScrollReveal().reveal('.about .description, .contact-right', { delay: 500, origin: 'right' });
 ScrollReveal().reveal('.about .professional-list li', { delay: 400, origin: 'right', interval: 200 });
-ScrollReveal().reveal('.skills-description, .contact-card, .contact-left h2', { delay: 600, origin: 'left' });
+ScrollReveal().reveal('.skills-description, .contact-card, .contact-left h2', { delay: 700, origin: 'left' });
 ScrollReveal().reveal('.experience-card, .service-card, .education, .portfolio .img-card', { delay: 700, origin: 'bottom', interval: 200 });
-ScrollReveal().reveal('.footer .group', { delay: 700, origin: 'right', interval: 200 });
+ScrollReveal().reveal('.footer ,.group', { delay: 700, origin: 'bottom', interval: 200 });

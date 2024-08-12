@@ -8,6 +8,7 @@
   --second-color: #ff5500;
   --third-color: #777;
   --third-color-02: #5b5b5b;
+  --footer-content: #000;
 
   /*-----------------------------------*\
    * #Hover colors
@@ -24,6 +25,7 @@
   --transparent-color-01: #0000001a;
   --transparent-color-02: #6a59d11a;
   --line-color:#d7d7d7;
+  --footer-color:#EFEDF9;
   /*-----------------------------------*\
    * #Color Filter
   \*-----------------------------------*/
@@ -57,6 +59,7 @@
   /* --third-color: #777; */
   /* --third-color-02: #5b5b5b; */
   --third-color: #a9afc3;
+  --footer-content: #fff;
 
   /*-----------------------------------*\
    * #Background colors
@@ -67,6 +70,7 @@
   --bg-transparent-color: #ffffff1a;
   --transparent-color-01: #ffffff1a;
   --line-color:#454f6b;
+  --footer-color:#182141;
   
   /*-----------------------------------*\
    * #Color Filter
@@ -543,6 +547,7 @@ header.sticky{
   padding: 20px;
   margin-top: 15px;
   border-radius: 6px;
+  cursor: pointer;
   transition: 0.3s ease;
 }
 
@@ -568,6 +573,7 @@ header.sticky{
   margin-bottom: 10px;
   padding: 20px;
   border-radius: 6px;
+  cursor: pointer;
   transition: 0.3s ease;
 }
 
@@ -1027,15 +1033,15 @@ footer{
   align-items: center;
   flex-direction: column;
   /* background: var(--second-color); */
-  background: var(--third-color-02);
+  background: var(--footer-color);
   width: 100%;
   margin-top: 50px;
-  padding: 3rem 2rem;
-  color: #fff;
+  padding: 2.5rem 1.5rem;
+  color: var(--footer-content);
 }
 
 footer a{
-  color: #fff;
+  color: var(--footer-content);
 }
 
 .footer-container{
@@ -1048,7 +1054,7 @@ footer a{
 .footer-container .about h2{
   font-size: 3em;
   font-weight: 600;
-  background: linear-gradient(to top, transparent 0%, #fff 50%);
+  background: linear-gradient(to top, transparent 0%, var(--footer-content) 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
@@ -1079,8 +1085,18 @@ footer a{
   display: flex;
 }
 
+.footer-container .follow ul a:hover{
+  color: var(--second-color);
+  transition: 0.5s ease;
+}
+
 .footer-container .info a{
   margin: 20px;
+}
+
+.footer-container .info a:hover{
+  color: var(--second-color);
+  transition: 0.5s ease;
 }
 
 .footer-container .follow a{
