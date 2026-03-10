@@ -1345,3 +1345,64 @@ footer a{
     font-size: 0.8rem;
   }
 }
+
+/*-----------------------------------*\
+ * #Publications
+\*-----------------------------------*/
+
+.publication-list{
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));  */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-columns: repeat(2, minmax(400px, 1fr)); */
+  gap: 30px;
+  width: 100%;
+}
+
+.publication-card{
+  background: var(--card-bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 4px solid var(--second-color);
+  box-shadow: var(--box-shadow);
+  transition: 0.3s ease;
+}
+
+.publication-card:hover{
+  transform: translateY(-6px);
+}
+
+.pub-title{
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pub-authors{
+  font-size: var(--small-font-size);
+  color: var(--third-color);
+  margin-bottom: 6px;
+}
+
+.pub-venue{
+  font-size: var(--small-font-size);
+  color: var(--third-color-02);
+  margin-bottom: 15px;
+}
+
+.pub-links a{
+  font-size: var(--small-font-size);
+  margin-right: 15px;
+  color: var(--second-color);
+  font-weight: 500;
+}
+
+.pub-links a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 730px){
+  .publication-list{
+    grid-template-columns: 1fr;
+  }
+}
